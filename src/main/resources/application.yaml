@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: challenge
+  webflux:
+    base-path: /api
+
+server:
+  port: 8080
+
+springdoc:
+  api-docs:
+    path: /docs
+  swagger-ui:
+    path: /swagger-ui
+    url: /docs
+
+# API External
+external-api:
+  movies-url: https://challenge.iugolabs.com/api/movies/search
+  connect-timeout: 5000
+  read-timeout: 10000
+  max-concurrent-requests: 5
